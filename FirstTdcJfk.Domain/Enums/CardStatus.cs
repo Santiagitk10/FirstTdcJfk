@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstTdcJfk.Domain.Enums
+{
+    public enum CardStatus
+    {
+        Active,
+        Inactive,
+        Blocked,
+        Cancelled
+    }
+}
