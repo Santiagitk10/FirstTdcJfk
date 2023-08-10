@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FirstTdcJfk.Domain\FirstTdcJfk.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

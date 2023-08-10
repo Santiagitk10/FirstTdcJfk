@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FirstTdcJfk.Application.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
+        ITdcRepository Tdcs { get; }
     }
 }
