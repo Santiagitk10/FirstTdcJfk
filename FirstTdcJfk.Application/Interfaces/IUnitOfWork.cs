@@ -8,6 +8,6 @@ namespace FirstTdcJfk.Application.Interfaces
 {
     public interface IUnitOfWork
     {
-        ITdcRepository Tdcs { get; }
+        ICreditCardRepository Tdcs { get; }
     }
 }

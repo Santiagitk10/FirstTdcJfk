@@ -13,7 +13,7 @@ namespace FirstTdcJfk.Infrastructure
     {
         public static void AddInfrastructure(this IServiceCollection services)
         {
-            services.AddTransient<ITdcRepository, TdcRepository>();
+            services.AddTransient<ICreditCardRepository, CreditCardRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
     }

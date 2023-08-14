@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FirstTdcJfk.Application\FirstTdcJfk.Application.csproj" />
     <ProjectReference Include="..\FirstTdcJfk.Infrastructure\FirstTdcJfk.Infrastructure.csproj" />
   </ItemGroup>
 

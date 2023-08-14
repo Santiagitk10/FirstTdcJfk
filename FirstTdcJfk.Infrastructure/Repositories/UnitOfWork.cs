@@ -9,9 +9,9 @@ namespace FirstTdcJfk.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public ITdcRepository Tdcs { get; }
+        public ICreditCardRepository Tdcs { get; }
 
-        public UnitOfWork(ITdcRepository tdcRepository)
+        public UnitOfWork(ICreditCardRepository tdcRepository)
         {
             Tdcs = tdcRepository;
         }

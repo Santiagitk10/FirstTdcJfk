@@ -1,4 +1,5 @@
 ﻿using FirstTdcJfk.Application.Interfaces;
+using FirstTdcJfk.Application.Services;
 using FirstTdcJfk.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,48 +7,48 @@ namespace FirstTdcJfk.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TdcController : Controller
+    public class CreditCardController : Controller
     {
-        private readonly IUnitOfWork unitOfWork;
+        private readonly ICreditCardService creditCardService;
 
-        public TdcController(IUnitOfWork unitOfWork)
+        public CreditCardController(ICreditCardService creditCardService)
         {
-            this.unitOfWork = unitOfWork;
+            this.creditCardService = creditCardService;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var data = await unitOfWork.Tdcs.GetAllAsync();
+            var data = await creditCardService.GetAllCards();
             return Ok(data);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var data = await unitOfWork.Tdcs.GetByIdAsync(id);
+            var data = await creditCardService.GetCardById(id);
             if (data == null) return Ok();
             return Ok(data);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Add(Tdc tdc)
+        public async Task<IActionResult> Add(CreditCard tdc)
         {
-            var data = await unitOfWork.Tdcs.AddAsync(tdc);
+            var data = await creditCardService.AddCard(tdc);
             return Ok(data);
         }
 
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            var data = await unitOfWork.Tdcs.DeleteAsync(id);
+            var data = await creditCardService.DeleteCard(id);
             return Ok(data);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(Tdc tdc)
+        public async Task<IActionResult> Update(CreditCard tdc)
         {
-            var data = await unitOfWork.Tdcs.UpdateAsync(tdc);
+            var data = await creditCardService.UpdateCard(tdc);
             return Ok(data);
         }
     }

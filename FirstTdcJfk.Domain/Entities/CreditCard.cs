@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FirstTdcJfk.Domain.Entities
 {
-    public class Tdc
+    public class CreditCard
     {
         public int Id { get; set; }
         public string CardNumber { get; set; }

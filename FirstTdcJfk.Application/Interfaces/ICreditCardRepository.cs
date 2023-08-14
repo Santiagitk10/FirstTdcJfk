@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FirstTdcJfk.Application.Interfaces
 {
-    public interface ITdcRepository : IGenericRepository<Tdc>
+    public interface ICreditCardRepository : IGenericRepository<CreditCard>
     {
     }
 }
