@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstTdcJfk.Domain.Enums
+namespace Jfk.Tc.Decn.Domain.Enums
 {
     public enum CardStatus
     {

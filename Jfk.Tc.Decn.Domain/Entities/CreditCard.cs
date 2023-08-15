@@ -1,11 +1,11 @@
-﻿using FirstTdcJfk.Domain.Enums;
+﻿using Jfk.Tc.Decn.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstTdcJfk.Domain.Entities
+namespace Jfk.Tc.Decn.Domain.Entities
 {
     public class CreditCard
     {

@@ -1,9 +1,9 @@
-﻿using FirstTdcJfk.Application.Interfaces;
-using FirstTdcJfk.Application.Services;
-using FirstTdcJfk.Domain.Entities;
+﻿using Jfk.Tc.Decn.Application.Interfaces;
+using Jfk.Tc.Decn.Application.Services;
+using Jfk.Tc.Decn.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FirstTdcJfk.Api.Controllers
+namespace Jfk.Tc.Decn.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

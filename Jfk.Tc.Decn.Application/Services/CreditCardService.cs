@@ -1,12 +1,12 @@
-﻿using FirstTdcJfk.Application.Interfaces;
-using FirstTdcJfk.Domain.Entities;
+﻿using Jfk.Tc.Decn.Application.Interfaces;
+using Jfk.Tc.Decn.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstTdcJfk.Application.Services
+namespace Jfk.Tc.Decn.Application.Services
 {
     public class CreditCardService : ICreditCardService
     {

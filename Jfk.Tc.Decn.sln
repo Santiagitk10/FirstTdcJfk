@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstTdcJfk.Domain", "FirstTdcJfk.Domain\FirstTdcJfk.Domain.csproj", "{6639CD71-695D-4D10-A73D-D7B4AD6DBFDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jfk.Tc.Decn.Domain", "Jfk.Tc.Decn.Domain\Jfk.Tc.Decn.Domain.csproj", "{6639CD71-695D-4D10-A73D-D7B4AD6DBFDC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstTdcJfk.Application", "FirstTdcJfk.Application\FirstTdcJfk.Application.csproj", "{4A4E4934-E026-43D8-8151-90C9A6E8919A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jfk.Tc.Decn.Application", "Jfk.Tc.Decn.Application\Jfk.Tc.Decn.Application.csproj", "{4A4E4934-E026-43D8-8151-90C9A6E8919A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstTdcJfk.Infrastructure", "FirstTdcJfk.Infrastructure\FirstTdcJfk.Infrastructure.csproj", "{86273760-65EC-4A65-95F9-583F720408B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jfk.Tc.Decn.Infrastructure", "Jfk.Tc.Decn.Infrastructure\Jfk.Tc.Decn.Infrastructure.csproj", "{86273760-65EC-4A65-95F9-583F720408B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstTdcJfk.Api", "FirstTdcJfk.Api\FirstTdcJfk.Api.csproj", "{3B49855A-4320-45D2-BC4F-408928DBB044}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jfk.Tc.Decn.Api", "Jfk.Tc.Decn.Api\Jfk.Tc.Decn.Api.csproj", "{3B49855A-4320-45D2-BC4F-408928DBB044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

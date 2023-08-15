@@ -1,5 +1,5 @@
-﻿using FirstTdcJfk.Application.Interfaces;
-using FirstTdcJfk.Infrastructure.Repositories;
+﻿using Jfk.Tc.Decn.Application.Interfaces;
+using Jfk.Tc.Decn.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstTdcJfk.Infrastructure
+namespace Jfk.Tc.Decn.Infrastructure
 {
     public static class ServiceRegistration
     {

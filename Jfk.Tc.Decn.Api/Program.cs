@@ -1,5 +1,5 @@
-using FirstTdcJfk.Application.Services;
-using FirstTdcJfk.Infrastructure;
+using Jfk.Tc.Decn.Application.Services;
+using Jfk.Tc.Decn.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

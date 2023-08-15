@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirstTdcJfk.Application.Interfaces
+namespace Jfk.Tc.Decn.Application.Interfaces
 {
     public interface IUnitOfWork
     {
