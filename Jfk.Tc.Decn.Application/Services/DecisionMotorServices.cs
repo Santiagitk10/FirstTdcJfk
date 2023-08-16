@@ -19,7 +19,7 @@ namespace Jfk.Tc.Decn.Application.Services
 
         public Task<DecisionMotorEvertec> ObtnerDecision(Usuario usuario)
         {
-            return _decisionMotorAdapter.ObtenerDecision(usuario); ;
+            return _decisionMotorAdapter.ObtenerDecision(usuario);
         }
     }
 }
