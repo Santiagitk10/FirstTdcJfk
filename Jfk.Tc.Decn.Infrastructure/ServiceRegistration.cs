@@ -1,4 +1,6 @@
 ﻿using Jfk.Tc.Decn.Application.Interfaces;
+using Jfk.Tc.Decn.Application.Services;
+using Jfk.Tc.Decn.Infrastructure.Adapters;
 using Jfk.Tc.Decn.Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -15,6 +17,8 @@ namespace Jfk.Tc.Decn.Infrastructure
         {
             services.AddTransient<ICreditCardRepository, CreditCardRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IDecisionMotorServices, DecisionMotorServices>();
+            services.AddTransient<IDecisionMotorAdapter, DecisionMotorAdapter>();
         }
     }
 }
