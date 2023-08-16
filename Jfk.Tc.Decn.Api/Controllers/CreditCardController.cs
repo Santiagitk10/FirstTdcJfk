@@ -1,6 +1,7 @@
 ﻿using Jfk.Tc.Decn.Application.Interfaces;
 using Jfk.Tc.Decn.Application.Services;
 using Jfk.Tc.Decn.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Jfk.Tc.Decn.Api.Controllers
@@ -16,6 +17,7 @@ namespace Jfk.Tc.Decn.Api.Controllers
             this.creditCardService = creditCardService;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -23,6 +25,7 @@ namespace Jfk.Tc.Decn.Api.Controllers
             return Ok(data);
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -31,6 +34,7 @@ namespace Jfk.Tc.Decn.Api.Controllers
             return Ok(data);
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> Add(CreditCard tdc)
         {
@@ -38,6 +42,7 @@ namespace Jfk.Tc.Decn.Api.Controllers
             return Ok(data);
         }
 
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
@@ -45,6 +50,7 @@ namespace Jfk.Tc.Decn.Api.Controllers
             return Ok(data);
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> Update(CreditCard tdc)
         {
