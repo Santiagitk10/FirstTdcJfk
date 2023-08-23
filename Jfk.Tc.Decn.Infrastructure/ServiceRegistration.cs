@@ -19,6 +19,7 @@ namespace Jfk.Tc.Decn.Infrastructure
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IDecisionMotorServices, DecisionMotorServices>();
             services.AddTransient<IDecisionMotorAdapter, DecisionMotorAdapter>();
+            services.AddScoped<ICreditCardService, CreditCardService>();
         }
     }
 }

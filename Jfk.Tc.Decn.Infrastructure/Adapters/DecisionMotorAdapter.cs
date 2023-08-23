@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Jfk.Tc.Decn.Application.Interfaces;
@@ -11,16 +12,17 @@ namespace Jfk.Tc.Decn.Infrastructure.Adapters
 
     public class DecisionMotorAdapter : IDecisionMotorAdapter
     {
-        private readonly HttpClient _httpClient;
+        private readonly IHttpClientFactory _httpClientFactory;
 
-        public DecisionMotorAdapter(HttpClient httpClient)
+        public DecisionMotorAdapter(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClient;
+            _httpClientFactory = httpClientFactory;
         }
 
         public async Task<DecisionMotorEvertec> ObtenerDecision(Usuario usuario)
         {
-            HttpResponseMessage response = await _httpClient.GetAsync($"https://api.example.com/id");
+            var client = _httpClientFactory.CreateClient();
+            HttpResponseMessage response = await client.GetAsync($"https://api.example.com/id");
 
             if (response.IsSuccessStatusCode)
             {
