@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SoapCore" Version="1.1.0.38" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jfk.Tc.Decn.Application\Jfk.Tc.Decn.Application.csproj" />
+    <ProjectReference Include="..\Jfk.Tc.Decn.Infrastructure\Jfk.Tc.Decn.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
