@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddInfrastructure();
-builder.Services.AddScoped<ICreditCardService, CreditCardService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
